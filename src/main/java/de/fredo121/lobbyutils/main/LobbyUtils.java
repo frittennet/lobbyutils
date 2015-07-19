@@ -13,12 +13,12 @@ public class LobbyUtils extends JavaPlugin {
 	public void onEnable() { 
 		this.getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
 
-		getLogger().info("Lobby was enabled");
+		getLogger().info("Lobby wurde aktiviert");
 	}
 
 	@Override
 	public void onDisable() {
-		getLogger().info("Lobby was disabled");
+		getLogger().info("Lobby wurde deaktiviert");
 	}
 
 	@Override
