@@ -5,3 +5,5 @@ Implements the
 /hub
 /lobby
 command which sends the user to the Bungee lobby server.
+
+Super easy integration!
