@@ -29,6 +29,10 @@
       <id>spigot-repo</id>
       <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
     </repository>
+	<repository>
+	  <id>lobbyutils-repo</id>
+	  <url>http://codeinabottle.net:8080/job/LobbyUtils/lastSuccessfulBuild/artifact/target/</url>
+	</repository>
   </repositories> 
   <dependencies>
     <dependency>
@@ -36,6 +40,11 @@
       <artifactId>spigot-api</artifactId>
       <version>1.8.7-R0.1-SNAPSHOT</version>
 	  <scope>provided</scope>
+    </dependency>
+	<dependency>
+      <groupId>de.fredo121</groupId>
+      <artifactId>lobbyutils</artifactId>
+      <version>0.1</version>
     </dependency>
   </dependencies>
 </project>
