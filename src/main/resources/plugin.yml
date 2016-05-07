@@ -11,6 +11,18 @@ commands:
   hub:
     description: Hub Base Command
     permission: lobby.use
+  ts:
+    description: ts
+    permission: lobby.ts
+  ts3:
+    description: ts3
+    permission: lobby.ts
+  vote:
+    description: vote
+    permission: lobby.vote
+  web:
+    description: web
+    permission: lobby.web
     
 permissions:
   lobby.use:
