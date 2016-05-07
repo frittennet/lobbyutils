@@ -1,6 +1,7 @@
 package de.fredo121.lobbyutils.main;
 
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -33,7 +34,7 @@ public class LobbyUtils extends JavaPlugin {
 		    }
 
 		    Player player = (Player) sender;
-		    player.sendMessage("§7[§6Toothwitch§7] §7Unsere TS3-IP lautet §6ts.toothwit.ch§7!");
+		    player.sendMessage(ChatColor.GRAY + "[" + ChatColor.GOLD +  "Toothwitch" +  ChatColor.GRAY + "] Unsere TS3-IP lautet ts.toothwit.ch!");
 		    return true;    
 		 
 		}    
@@ -44,21 +45,11 @@ public class LobbyUtils extends JavaPlugin {
 		    }
 
 		    Player player = (Player) sender;
-		    player.sendMessage("§7[§6Toothwitch§7] §7Unsere TS3-IP lautet §6ts.toothwit.ch§7!");
+		    player.sendMessage(ChatColor.GRAY + "[" + ChatColor.GOLD +  "Toothwitch" +  ChatColor.GRAY + "] Unsere TS3-IP lautet ts.toothwit.ch!");
 		    return true;    
 		 
 		} 
 		   
-		if (command.getName().equalsIgnoreCase("vote")) {
-		    if (args.length>1) {
-		        return false;
-		    }
-
-		    Player player = (Player) sender;
-		    player.sendMessage("§7[§6Toothwitch§7] §7Vote für uns auf §6ts.toothwit.ch/vote§7!");
-		    return true;    
-		 
-		}
 		
 		if (command.getName().equalsIgnoreCase("web")) {
 		    if (args.length>1) {
@@ -66,7 +57,7 @@ public class LobbyUtils extends JavaPlugin {
 		    }
 
 		    Player player = (Player) sender;
-		    player.sendMessage("§7[§6Toothwitch§7] §7Besuche unsere Website auf §6ts.toothwit.ch§7!");
+		    player.sendMessage(ChatColor.GRAY + "[" + ChatColor.GOLD +  "Toothwitch" +  ChatColor.GRAY + "] Besuche unsere Website auf toothwit.ch!");
 		    return true;    
 		 
 		}

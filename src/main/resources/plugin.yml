@@ -17,9 +17,6 @@ commands:
   ts3:
     description: ts3
     permission: lobby.ts
-  vote:
-    description: vote
-    permission: lobby.vote
   web:
     description: web
     permission: lobby.web
