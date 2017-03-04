@@ -27,45 +27,6 @@ public class LobbyUtils extends JavaPlugin {
 		if (command.getName().equalsIgnoreCase("lobby") || command.getName().equalsIgnoreCase("hub")) {
 			Util.SendToBungeeServer(Settings.get().getBungeeLobbyServer(), (Player)sender);
 		}
-		
-		if (command.getName().equalsIgnoreCase("ts")) {
-		    if (args.length>1) {
-		        return false;
-		    }
-
-		    Player player = (Player) sender;
-		    player.sendMessage(ChatColor.GRAY + "[" + ChatColor.GOLD +  "Toothwitch" +  ChatColor.GRAY + "] Unsere TS3-IP lautet ts.toothwit.ch!");
-		    return true;    
-		 
-		}    
-
-		if (command.getName().equalsIgnoreCase("ts3")) {
-		    if (args.length>1) {
-		        return false;
-		    }
-
-		    Player player = (Player) sender;
-		    player.sendMessage(ChatColor.GRAY + "[" + ChatColor.GOLD +  "Toothwitch" +  ChatColor.GRAY + "] Unsere TS3-IP lautet ts.toothwit.ch!");
-		    return true;    
-		 
-		} 
-		   
-		
-		if (command.getName().equalsIgnoreCase("web")) {
-		    if (args.length>1) {
-		        return false;
-		    }
-
-		    Player player = (Player) sender;
-		    player.sendMessage(ChatColor.GRAY + "[" + ChatColor.GOLD +  "Toothwitch" +  ChatColor.GRAY + "] Besuche unsere Website auf toothwit.ch!");
-		    return true;    
-		 
-		}
-		
-
-
-		
-
 		return false; 
 	}
 
@@ -76,5 +37,4 @@ public class LobbyUtils extends JavaPlugin {
 	public LobbyUtils() {
 		instance = this;
 	}
-	
 }
