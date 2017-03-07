@@ -7,11 +7,12 @@ import org.bukkit.configuration.file.FileConfiguration;
 
 import de.fredo121.lobbyutils.main.LobbyUtils; 
 
-public class Settings {
+public class Settings { 
 	private static Settings instance;
 	private FileConfiguration config;
 	private String bungeeLobbyServer;
-
+	private boolean useEventHandler = false; 
+	
 	public static Settings get() {
 		if (instance == null) {
 			instance = new Settings();
@@ -30,12 +31,15 @@ public class Settings {
 		LobbyUtils.get().reloadConfig(); 
 		config = LobbyUtils.get().getConfig(); 
 
-		bungeeLobbyServer = config.getString("lobby.bungeeServer"); 
+		bungeeLobbyServer = config.getString("lobby.bungeeServer", "lobby"); 
+		useEventHandler = config.getBoolean("lobby.useEventHandler", false); 
+		saveConfig(); 
 	}
 
 	public void saveConfig() {
 		config.set("lobby.bungeeServer", bungeeLobbyServer); 
-
+		config.set("lobby.useEventHandler", useEventHandler); 
+		
 		File gameConfig = new File(LobbyUtils.get().getDataFolder() + "/" + "config.yml");
 		try {
 			config.save(gameConfig);
@@ -48,8 +52,18 @@ public class Settings {
 		return bungeeLobbyServer;
 	}
 
-	public void setBungeeLobbyServer(String bungeeLobbyServer) {
+	public void setBungeeLobbyServer(String bungeeLobbyServer) { 
 		this.bungeeLobbyServer = bungeeLobbyServer; 
 		saveConfig(); 
+	} 
+	
+	public boolean getUseEventHandler() { 
+	    return useEventHandler; 
 	}
-}
+	
+	public void setUseEventHandler(boolean value) { 
+	    useEventHandler = value; 
+	    saveConfig(); 
+	} 
+	
+} 
