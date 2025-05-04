@@ -1,5 +1,5 @@
-##Lobbyutils
-Spigot Lobby and Hub command implementation
+## Lobbyutils
+Spigot/Paper Lobby and Hub command implementation
 
 Implements the 
 /hub
@@ -8,4 +8,4 @@ command which sends the user to the Bungee lobby server.
 
 Super easy integration!
 
-Used on mc.toothwit.ch. A 1.8 Minecraft Server
+Used on play.fritten.net a 1.8-1.21 Minecraft Server
