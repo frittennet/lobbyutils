@@ -1,11 +1,11 @@
-package de.fredo121.lobbyutils.main;
+package net.fritten.lobbyUtils;
 
 import java.io.File;
 import java.io.IOException;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 
-import de.fredo121.lobbyutils.main.LobbyUtils; 
+import net.fritten.lobbyUtils.LobbyUtils;
 
 public class Settings { 
 	private static Settings instance;

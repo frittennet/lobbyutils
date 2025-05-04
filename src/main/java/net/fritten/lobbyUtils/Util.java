@@ -1,4 +1,4 @@
-package de.fredo121.lobbyutils.main;
+package net.fritten.lobbyUtils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;

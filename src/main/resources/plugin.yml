@@ -1,8 +1,9 @@
 name: LobbyUtils
-main: de.fredo121.lobbyutils.main.LobbyUtils
-version: 0.1
-author: fredo121
-description: LobbyUtils Plugin using Spigot API 
+version: '0.2'
+main: net.fritten.lobbyUtils.LobbyUtils
+api-version: '1.21'
+author: fredo121, Houston9000
+description: LobbyUtils Plugin using Spigot API
 
 commands:
   lobby:
@@ -11,7 +12,7 @@ commands:
   hub:
     description: Hub Base Command
     permission: lobby.use
-    
+
 permissions:
   lobby.use:
     description: Use Lobby Commands
